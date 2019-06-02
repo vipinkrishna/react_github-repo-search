@@ -23,7 +23,8 @@ class SearchResults extends Component {
       <div className="SearchResults">
         <h5>Repo Search Result</h5>
         <div className="resultContainer">
-          {search_results.slice(0,10)}
+          {/* {search_results.slice(0,10)} */}
+          {search_results}
         </div>
       </div>
     );
