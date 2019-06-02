@@ -11,9 +11,9 @@ class SearchResults extends Component {
         name: result.name,
         description: result.description,
         avatar: result.owner.avatar_url,
-        starcount: result.owner.stargazers_count,
-        forkscount: result.owner.forks_count,
-        openissuescount: result.owner.open_issues_count,
+        starcount: result.stargazers_count,
+        forkscount: result.forks_count,
+        openissuescount: result.open_issues_count,
         linkto: result.html_url,
         login: result.owner.login
       }
@@ -21,7 +21,10 @@ class SearchResults extends Component {
     });
     return (
       <div className="SearchResults">
-        {search_results}
+        <h5>Repo Search Result</h5>
+        <div className="resultContainer">
+          {search_results.slice(0,10)}
+        </div>
       </div>
     );
   }

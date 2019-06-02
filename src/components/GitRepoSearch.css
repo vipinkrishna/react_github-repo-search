@@ -13,3 +13,35 @@
     color: #fff;
     background-color: dodgerblue;
 }
+
+.searchForm form input {
+    background-color: #fff;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #aaa;
+    padding: 10px;
+    margin: 10px;
+}
+
+.searchForm form button {
+    background-color: dodgerblue;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.searchForm form button:hover {
+    background-color: #1e90ff;
+}
+
+.searchForm form button:hover {
+    background-color: #1e80ff;
+}
+
+.searchForm form button:active {
+    background-color: #1e70ff;
+}

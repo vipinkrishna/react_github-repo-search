@@ -18,13 +18,14 @@ class GitRepoSearch extends Component {
 
   handleSubmit = (el) => {
     el.preventDefault();
-    fetch(`https://api.github.com/search/repositories?q=${this.state.search}`)
-      .then(response => response.json())
-      .then(result => {
-        this.setState({count: result.total_count, result: result.items});
-        // console.log(this.state);
-      })
-      .catch(error => console.error('[ERROR]: ', error))
+    if(this.state.search.trim().length > 0) {
+      fetch(`https://api.github.com/search/repositories?q=${this.state.search}`)
+        .then(response => response.json())
+        .then(result => {
+          this.setState({count: result.total_count, result: result.items});
+        })
+        .catch(error => console.error('[ERROR]: ', error))
+    }
   }
 
   render() {
