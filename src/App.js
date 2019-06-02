@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
+import GitRepoSearch from './components/GitRepoSearch';
 
 function App() {
   return (
     <div className="App">
-      TEST
+      <GitRepoSearch/>
     </div>
   );
 }
