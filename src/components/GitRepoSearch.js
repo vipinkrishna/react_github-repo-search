@@ -29,13 +29,16 @@ class GitRepoSearch extends Component {
 
   render() {
     return (
-      <>
-        <form className="search" onSubmit={this.handleSubmit}>
-          <input name="search" placeholder="Search" onChange={this.handleChange}/>
-          <button>Search</button>
-        </form>
+      <div className="GitRepoSearch">
+        <div className="searchForm">
+          <h5>Git Repo Search Filter</h5>
+          <form onSubmit={this.handleSubmit}>
+            <input name="search" placeholder="Search" onChange={this.handleChange}/>
+            <button>Search</button>
+          </form>
+        </div>
         <SearchResults count={this.state.count} result={this.state.result}/>
-      </>
+      </div>
     );
   }
 

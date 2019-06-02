@@ -1,0 +1,15 @@
+.GitRepoSearch {
+    width: 100%;
+}
+
+.searchForm {
+    border: 1px solid dodgerblue;
+    border-radius: 5px;
+}
+
+.searchForm h5 {
+    margin: 0;
+    padding: 10px;
+    color: #fff;
+    background-color: dodgerblue;
+}
